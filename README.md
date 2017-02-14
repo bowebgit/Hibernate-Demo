@@ -1,4 +1,4 @@
-###Hibernate Demo
+##Hibernate Demo
 Hibernate persistence using Spring framework. Spring provides a datasource
 for the application, as well as transaction management. The benefit of 
 Springs transaction management is that propogation is handled automatically, 
@@ -6,35 +6,39 @@ in this case, through annotations, while still allowing access to Hibernates
 sessionFactory methods. 
 
 
-####Software Environment
+###Software Environment
 * Maven3
 * Spring4 
 * Hibernate4 
 * Postgres9
 
 
-####Java Project File Structure
- Hibernate-Demo
+###Java Project File Structure
+```
+Hibernate-Demo
  └───src.main.java.jedpayt.demo
  │       │                 ├───dao
  │       │                 │   ├───api
  │       │                 │   │   ├───ProductDAO.java
- │	     │			       │   │   └───VendorDAO.java
+ │	   │			       │   │   └───VendorDAO.java
  │       │                 │   ├───ProductDAOImpl.java
  │       │                 │   └───VendorDAOImpl.java
  │       │                 ├───entity
- │	     │			       │   ├───Product.java
- │	     │			       │   └───Vendor.java
+ │	   │			       │   ├───Product.java
+ │	   │			       │   └───Vendor.java
  │       │                 ├───main
  │       │			       │   └───Main.java
  │       │                 └───service
- │		 │				       │	 └───Service.java
- │		 │				       └───ServiceImpl.java
- │		 └───spring.xml
+ │       │                     ├───api
+ │       │			       	   │   └───Service.java
+ │       │		               └───ServiceImpl.java
+ │	   └───spring.xml
  └───pom.xml
+```
  
 
-####Database Script
+###Database
+```
 -- Sequences
 CREATE SEQUENCE vendor_seq;
 CREATE SEQUENCE product_seq;
@@ -60,8 +64,9 @@ CREATE TABLE product (
   prod_price NUMERIC(12,2),
   prod_qoh INTEGER
 );
+```
 
-####Output
+###Output
 Test with main.java
 
 
