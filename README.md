@@ -1,8 +1,8 @@
 ##Hibernate Demo
 Hibernate persistence using Spring framework. Spring provides a datasource
 for the application, as well as transaction management. The benefit of 
-Springs transaction management is that propogation is handled automatically, 
-in this case, through annotations, while still allowing access to Hibernates 
+Spring's transaction management is that propogation is handled automatically, 
+in this case, through annotations, while still allowing access to Hibernate's 
 sessionFactory methods. 
 
 
