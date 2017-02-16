@@ -1,9 +1,9 @@
 ##Hibernate Demo
 Hibernate persistence using Spring framework. Spring provides a datasource
-for the application, as well as transaction management. The benefit of 
+for the application and handles transaction management. The benefit of 
 Spring's transaction management is that propogation is handled automatically, 
 in this case, through annotations, while still allowing access to Hibernate's 
-sessionFactory methods. 
+sessionFactory methods.  
 
 
 ###Software Environment
@@ -38,6 +38,7 @@ Hibernate-Demo
  
 
 ###Database
+Using PostgreSQL
 ```
 -- Sequences
 CREATE SEQUENCE vendor_seq;
@@ -67,7 +68,7 @@ CREATE TABLE product (
 ```
 
 ###Output
-Test with main.java
+Test with the [Main.java](https://github.com/bowebgit/Hibernate-Demo/blob/master/src/main/java/jedpayt/demo/main/Main.java) file.
 
 ```
 
