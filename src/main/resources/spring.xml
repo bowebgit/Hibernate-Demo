@@ -18,6 +18,8 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 		base-package="jedpayt.demo.dao" />
 	<context:component-scan  
 		base-package="jedpayt.demo.entity" />
+	<context:component-scan
+		base-package="jedpayt.demo.service" />
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
@@ -32,7 +34,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect" >org.hibernate.dialect.PostgreSQLDialect</prop>
-				<prop key="hibernate.show_sql" >true</prop>
+				<prop key="hibernate.show_sql" >false</prop>
 			</props>
 		</property>
 		<property name="packagesToScan" value="jedpayt.demo.entity" />

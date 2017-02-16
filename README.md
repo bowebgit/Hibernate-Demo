@@ -30,7 +30,7 @@ Hibernate-Demo
  │       │			       │   └───Main.java
  │       │                 └───service
  │       │                     ├───api
- │       │			       	   │   └───Service.java
+ │       │			       	   │   └───ServiceApi.java
  │       │		               └───ServiceImpl.java
  │	   └───spring.xml
  └───pom.xml
@@ -68,5 +68,50 @@ CREATE TABLE product (
 
 ###Output
 Test with main.java
+
+```
+
+   ~Spring Hibernate Demo~ 
+   
+Creating product...
+Product created: Rake
+
+Creating vendor...
+Vendor created: WYX Distributors
+
+Updating product...
+Product updated: Rake
+
+Getting all vendors...
+Printing vendors and products...
+Vendor ID: 13255
+ vendor_name=Brookings, vendor_contact=Harry Potuski
+* Product ID: 31524
+  prod_name=Spade, prod_price=19.99, prod_qoh=3
+* Product ID: 31528
+  prod_name=Hoe, prod_price=10.99, prod_qoh=7
+* Product ID: 31525
+  prod_name=Bucket, prod_price=5.77, prod_qoh=12
+Vendor ID: 13256
+ vendor_name=Trinity Dist., vendor_contact=Terry York
+* Product ID: 31526
+  prod_name=Shovel, prod_price=23.99, prod_qoh=2
+Vendor ID: 13254
+ vendor_name=ZTZ Distributors, vendor_contact=Bob Gross
+* Product ID: 31529
+  prod_name=Barbed Wire, prod_price=99.99, prod_qoh=3
+* Product ID: 31527
+  prod_name=Grass Seed, prod_price=9.99, prod_qoh=18
+Vendor ID: 13270
+ vendor_name=WYX Distributors, vendor_contact=Sarah Bleach
+* Product ID: 31541
+  prod_name=Rake, prod_price=20.0, prod_qoh=10
+
+Deleting product...
+Product deleted. 
+
+~End
+
+```
 
 
